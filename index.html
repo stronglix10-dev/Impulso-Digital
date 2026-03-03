@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Impulso Digital | Infraestructura Digital Estratégica</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins', sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(180deg,#0b1120,#020617);
+color:white;
+line-height:1.6;
+}
+
+/* NAV */
+
+nav{
+position:fixed;
+width:100%;
+top:0;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 50px;
+background:rgba(5,10,25,0.85);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+nav h2{
+font-weight:700;
+letter-spacing:1px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:30px;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#22c55e;
+}
+
+/* GENERAL SECTIONS */
+
+section{
+padding:130px 20px;
+text-align:center;
+opacity:0;
+transform:translateY(50px);
+transition:all 0.8s ease;
+}
+
+section.visible{
+opacity:1;
+transform:translateY(0);
+}
+
+h1{
+font-size:52px;
+margin-bottom:20px;
+}
+
+h2{
+font-size:38px;
+margin-bottom:25px;
+}
+
+p{
+max-width:800px;
+margin:0 auto 20px auto;
+opacity:0.9;
+}
+
+/* HERO */
+
+.hero{
+background:linear-gradient(135deg,#1e3a8a,#2563eb);
+padding-top:200px;
+}
+
+.hero p{
+font-size:20px;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:18px 45px;
+background:#22c55e;
+border-radius:50px;
+color:white;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+box-shadow:0 15px 35px rgba(34,197,94,0.4);
+}
+
+.btn:hover{
+transform:translateY(-4px);
+background:#16a34a;
+}
+
+/* GRID */
+
+.grid{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:35px;
+margin-top:50px;
+}
+
+.card{
+background:#111827;
+padding:40px;
+width:270px;
+border-radius:25px;
+transition:0.4s;
+}
+
+.card:hover{
+background:#2563eb;
+transform:translateY(-12px);
+}
+
+/* DARK SECTIONS */
+
+.dark{
+background:#0f172a;
+}
+
+/* CTA */
+
+.cta{
+background:linear-gradient(135deg,#111827,#1e293b);
+}
+
+.cta h2{
+font-size:42px;
+}
+
+/* FOOTER */
+
+footer{
+padding:50px;
+background:#020617;
+opacity:0.7;
+font-size:14px;
+}
+
+/* WhatsApp */
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+padding:15px 22px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+.whatsapp:hover{
+transform:scale(1.1);
+}
+
+@media(max-width:768px){
+h1{font-size:32px;}
+h2{font-size:28px;}
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+<h2>Impulso Digital</h2>
+<div>
+<a href="#soluciones">Soluciones</a>
+<a href="#modelo">Modelo</a>
+<a href="#contacto">Contacto</a>
+</div>
+</nav>
+
+<section class="hero">
+<h1>Construimos Infraestructura Digital Rentable</h1>
+<p>No creamos páginas. Diseñamos sistemas que generan visibilidad, autoridad y crecimiento.</p>
+<a href="https://wa.me/549XXXXXXXXXX" class="btn">Solicitar Diagnóstico Estratégico</a>
+</section>
+
+<section>
+<h2>Si tu negocio no está optimizado digitalmente…</h2>
+<p>Estás perdiendo oportunidades todos los días frente a competidores mejor posicionados.</p>
+<p>Hoy no gana el mejor producto. Gana el mejor sistema.</p>
+</section>
+
+<section id="soluciones" class="dark">
+<h2>Ecosistema Digital 360°</h2>
+<div class="grid">
+
+<div class="card">
+<h3>Google Maps Estratégico</h3>
+<p>Optimización avanzada para dominar búsquedas locales.</p>
+</div>
+
+<div class="card">
+<h3>Webs de Alta Conversión</h3>
+<p>Diseñadas para transformar visitas en consultas reales.</p>
+</div>
+
+<div class="card">
+<h3>Aplicaciones Funcionales</h3>
+<p>Soluciones digitales adaptadas a cada modelo de negocio.</p>
+</div>
+
+<div class="card">
+<h3>Automatización Inteligente</h3>
+<p>Sistemas que trabajan 24/7 generando oportunidades.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>Resultados que Construyen Autoridad</h2>
+<p>Mayor visibilidad. Más consultas. Crecimiento sostenido.</p>
+<p>Trabajamos con estrategia, medición y optimización continua.</p>
+</section>
+
+<section id="modelo" class="dark">
+<h2>No vendemos servicios aislados</h2>
+<p>Construimos sistemas digitales conectados.</p>
+<p>Panel de métricas, optimización constante y evolución estratégica.</p>
+<p>Tu negocio deja de improvisar y empieza a escalar.</p>
+</section>
+
+<section id="contacto" class="cta">
+<h2>Las empresas que crecen toman decisiones</h2>
+<p>Si querés transformar tu negocio en una estructura digital sólida, es momento de actuar.</p>
+<a href="https://wa.me/5493856261577" class="btn">Hablar Ahora</a>
+</section>
+
+<footer>
+© 2026 Impulso Digital — Infraestructura Digital Estratégica
+</footer>
+
+<a href="https://wa.me/5493856261577" class="whatsapp">
+WhatsApp
+</a>
+
+<script>
+
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+sections.forEach(section => {
+const top = section.getBoundingClientRect().top;
+if(top < window.innerHeight - 100){
+section.classList.add("visible");
+}
+});
+});
+
+</script>
+
+</body>
+</html>
